@@ -1,0 +1,234 @@
+ 
+
+
+
+ body {
+   font-family: amatic sc;
+   text-align: center;
+
+   /*this shifts everything above the footer*/
+   margin-bottom: 500px;
+   /*background-image: url(https://i2.wp.com/www.foodrepublic.com/wp-content/uploads/2013/05/7.jpg?fit=600%2C563&ssl=1);
+  background-size: repeat-x; */
+   
+ }
+
+
+ footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   /*this makes the whole item move to the bottom*/
+   overflow: scroll;
+ }
+
+/*three images*/
+.row{
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 0px;
+}
+
+
+html {
+  background-image: url(logo.png);
+  background-repeat: repeat-x; 
+}
+
+nav ul a {
+  font-size: 25px;
+}
+
+
+/*slideshow*/
+
+#slideshow {
+  margin: 100px auto;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.4);
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+}
+
+#slideshow2 {
+  margin: 100px auto;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow2 > div {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+}
+
+/*contact form*/
+form {
+  font-size: 25px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear:both;
+}
+
+
+/*this fixed the hover to only go to fully to its text*/
+nav li {
+  display: inline-block;
+  /*the position is what fixed it*/
+  position: relative;
+}
+
+nav li:hover {
+  color: #000;
+}
+
+nav li::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav li:hover::before {
+  width:100%;
+}
+
+
+
+
+/*color test*/
+p.zero {
+  background-color: rgb(238,62,128);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.one {
+  background-color: rgb(244,90,139);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.two {
+  background-color: rgb(243,106,152);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.three {
+  background-color: rgb(244,123,166);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.four {
+  background-color: rgb(245,140,178);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.five {
+  background-color: rgb(246,159,192);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.six {
+  background-color: rgb(245,176,204);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.seven {
+  background-color: rgb(0,187,136);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.eight {
+  background-color: rgb(140,202,242);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.nine {
+  background-color: rgb(114,193,240);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.ten {
+  background-color: rgb(84,182,237);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.eleven {
+  background-color: rgb(48,170,233);
+  padding: 5px;
+  margin: 0px;
+  }
+  p.twelve {
+  background-color: rgb(0,160,230);
+  padding: 5px;
+  margin: 0px;
+  }
+  p.thirteen {
+  background-color: rgb(0,149,226);
+  padding: 5px;
+  margin: 0px;
+  }
+  
+  p.fourteen {
+  background-color: rgb(0,136,221);
+  padding: 5px;
+  margin: 0px;
+  }
+
+
+
+/*flexing images for the about page*/
+  .cols12 {
+    flex: 50%;
+
+  }
+
+  .cols6 {
+    flex: 25%;
+  }
+
+.col {
+  flex: 100%;
+  margin: 0px;
+}
+
+.container {
+  align-content: center;
+}
